@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+
+ 	 <link rel= "stylesheet" media= "all" type="text/css" href = "css/style.css" >
+ 	 <link rel= "stylesheet" media="all"  type="text/css" href="css/jquery-ui.css" />
+ 	 <link rel= "stylesheet" media="all"  type="text/css" href="css/jquery.lightbox.css">
+
+  	 <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+ 	 <script type="text/javascript" src="js/Index.js"></script>
+ 	 <script type="text/javascript" src="js/jquery-ui.js"></script>
+ 	 <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+ 	 <script src="http://code.highcharts.com/highcharts.js"></script>
+ 	 <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> Prantl's Bakery Home </title>
+
+</head>
+
+<style>
+
+	@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Stalemate-Regular.ttf);
+	}	
+	@font-face {
+    font-family: mySecondFont;
+    src: url(fonts/King-Basil-Lite.otf);
+	}	
+	@font-face {
+    font-family: myThirdFont;
+    src: url(fonts/TheWoodlands-Regular.otf);
+	}	
+
+	h1 {
+		color:darkgreen;
+		text-align:center; 
+		font-size: 75px;
+		font-family: "myFirstFont";
+		margin-top: 1%;
+		margin-bottom: 0px;
+
+	}
+	body{
+		background: url("images/background.jpeg") no-repeat center center fixed;
+		background-size: cover;
+	}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: white;
+    opacity: 0.7;
+    font-family: "mySecondFont";
+    font-size: 25px;
+	}
+
+	
+
+	li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	}
+
+	/* Change the link color on hover */
+	li a:hover {
+    background-color: darkgreen;
+    color: white;
+	}
+	
+	footer{
+		bottom: 10px;
+		text-align: center;
+	}
+
+</style>
+
+
+<body>
+
+	<header>
+		 <h1>  Prantl's Bakery </h1>
+	</header>
+
+	<nav>
+		<ul>
+		
+			<li><a href= "aboutus.html" class = "selected" >Home</a></li>
+			<li><a href= "locations.html">Locations</a></li>
+			<li><a href= "contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div id = "content">
+		<div class="slideshow-container">
+
+		<div class="mySlides fade" style= "display: block">
+  		<div class="numbertext">1 / 4</div>
+  		<div>
+  		<img src="images/image1.jpg" style="width:100%" >
+  		</div>
+  		<div class="text"></div>
+		</div>
+
+		<div class="mySlides fade">
+  		<div class="numbertext">2 / 4</div>
+  		<img src="images/image2.jpg" style="width:100%" >
+  		<div class="text"></div>
+		</div>
+
+		<div class="mySlides fade">
+  		<div class="numbertext">3 / 4</div>
+  		<img src="images/image3.jpg" style="width:100%" >
+ 		<div class="text"></div>
+		</div>
+
+		<div class="mySlides fade">
+  		<div class="numbertext">4 / 4</div>
+  		<img src="images/image4.jpg" style="width:100%" >
+ 		<div class="text"></div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+
+
+		<div class="dots" style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1)"></span> 
+  		<span class="dot" onclick="currentSlide(2)"></span> 
+  		<span class="dot" onclick="currentSlide(3)"></span> 
+  		<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+
+		<br><br>
+		<h2> Occassions to Celebrate</h2>
+		<div id = "tabDivider">
+		<div class="tab">
+  			<button class="tablinks active" onclick="openCity(event, 'London')">Weddings</button>
+  			<button class="tablinks" onclick="openCity(event, 'Paris')">Holidays</button>
+  			<button class="tablinks" onclick="openCity(event, 'Tokyo')">Other</button>
+		</div>
+
+		<div id="London" class="tabcontent" style= "display: block">
+  		<p>Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from.</p> 
+
+<button class="accordion"  onclick="batterBlock();">Batters and fillings</button>
+<div class="panel" id= "panel1">
+  <p>Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can’t hurt to ask!</p>
+</div>
+
+<button class="accordion">Sizes</button>
+<div class="panel">
+  <p>To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required.</p>
+</div>
+
+<button class="accordion">Pricing</button>
+<div class="panel">
+  <p>Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc. For example, the cakes seen above are in the $3.25 – $3.75 per serving range..</p>
+</div>
+
+<button class="accordion">Other Delicacies</button>
+<div class="panel">
+  <p>Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.</p>
+</div>
+
+<button class="accordion">Delivery</button>
+<div class="panel">
+  <p>We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery. </p>
+</div>
+
+<br><br><br>
+
+ <div class="slideshow-container2">
+
+<div class="mySlides2" style= "display: block">
+  <div class="numbertext2">1 / 5</div>
+  <img src="images/weddingImage2.jpg" style="width:50%">
+  
+
+
+
+</div>
+
+<div class="mySlides2">
+  <div class="numbertext2">2 / 5</div>
+  <img src="images/weddingImage1.jpg" style="width:50%">
+  
+</div>
+
+<div class="mySlides2">
+  <div class="numbertext2">3 / 5</div>
+  <img src="images/weddingImage3.jpg" style="width:50%">
+ 
+</div>
+
+<div class="mySlides2">
+  <div class="numbertext2">4 / 5</div>
+  <img src="images/weddingImage4.jpg" style="width:50%">
+ 
+</div>
+
+<div class="mySlides2">
+  <div class="numbertext2">5 / 5</div>
+  <img src="images/weddingImage5.jpg" style="width:50%">
+ 
+</div>
+
+<a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+<a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+
+</div>
+
+
+
+
+
+
+		</div>
+
+		<div id="Paris" class="tabcontent">
+ 	    
+		<p>From Valentine’s Day, Christmas, Thanksgiving, and Mardi Gras, we have cakes for your favorite occasions! 
+
+				Easter is right around the corner. Check out our baked goods that are perfect for your fun, colorful weekend, ranging from Easter themed cookies, cakes, cupcakes, and more.
+		</p> 
+
+
+
+
+
+		 <div class="slideshow-container2">
+
+		<div class="mySlides3" style= "display: block">
+  		<div class="numbertext2">1 / 5</div>
+  		<img src="images/holidayImage7.jpg" style="width:50%">
+  
+
+
+
+		</div>
+
+		<div class="mySlides3">
+ 		 <div class="numbertext2">2 / 5</div>
+ 		 <img src="images/holidayImage3.jpg" style="width:50%">
+  
+		</div>
+
+		<div class="mySlides3">
+ 		 <div class="numbertext2">3 / 5</div>
+  		<img src="images/holidayImage4.jpg" style="width:50%">
+ 
+		</div>
+
+		<div class="mySlides3">
+  		<div class="numbertext2">4 / 5</div>
+  		<img src="images/holidayImage5.jpg" style="width:50%">
+ 
+		</div>
+
+		<div class="mySlides3">
+  		<div class="numbertext2">5 / 5</div>
+  		<img src="images/holidayImage6.jpg" style="width:50%">
+ 
+		</div>
+
+		<a class="prev2" onclick="plusSlides3(-1)">&#10094;</a>
+		<a class="next2" onclick="plusSlides3(1)">&#10095;</a>
+
+		</div>
+
+
+
+
+
+
+
+		</div>
+
+		<div id="Tokyo" class="tabcontent">
+
+		<p>Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas. View our photo gallery on Facebook, and if you would like to inquire about a custom cake not available on our website, please email us at info@prantlsbakery.com. </p>	
+ 		 
+ 		<button class="accordion"  onclick="batterBlock();">Sizes</button>
+		<div class="panel" id= "panel1">
+  		<p>We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full. </p>
+		</div>
+
+		<button class="accordion">Pricing</button>
+		<div class="panel">
+  		<p>Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations.  </p>
+		</div>
+
+		<button class="accordion">Delivery</button>
+		<div class="panel">
+ 		 <p>Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p>
+		</div>
+
+		<br><br>
+		 <div class="slideshow-container2">
+
+		<div class="mySlides4" style= "display: block">
+  		<div class="numbertext2">1 / 5</div>
+  		<img src="images/otherImage1.jpg" style="width:50%">
+ 
+		</div>
+
+		<div class="mySlides4">
+ 		 <div class="numbertext2">2 / 5</div>
+ 		 <img src="images/otherImage2.jpg" style="width:50%">
+  
+		</div>
+
+		<div class="mySlides4">
+ 		 <div class="numbertext2">3 / 5</div>
+  		<img src="images/otherImage3.jpg" style="width:50%">
+ 
+		</div>
+
+		<div class="mySlides4">
+  		<div class="numbertext2">4 / 5</div>
+  		<img src="images/otherImage4.jpg" style="width:50%">
+ 
+		</div>
+
+		<div class="mySlides4">
+  		<div class="numbertext2">5 / 5</div>
+  		<img src="images/otherImage5.jpg" style="width:50%">
+ 
+		</div>
+
+		<a class="prev2" onclick="plusSlides4(-1)">&#10094;</a>
+		<a class="next2" onclick="plusSlides4(1)">&#10095;</a>
+
+		</div>
+
+		
+
+		</div>
+
+		<br>
+
+		<h2>The Burnt Almond Torte</h2>
+
+	
+
+		<div class="youtubeVido">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/iLhlZciMfoQ" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<br>
+
+		<table>
+  		<tr>
+    	<th>Stellar Yelp Reviews</th>
+    	<th>Huffington Post Article</th>
+  		</tr>
+  		<tr>
+   	    <td>
+
+   	    		<div class="slideshow-container2">
+
+		<div class="mySlides5" style= "display: block">
+  		<div class="numbertext2"></div>
+  		<img id= "yelp" src="images/yelpReview1.jpg" style="width:95%">
+ 
+		</div>
+
+		<div class="mySlides5">
+ 		 <div class="numbertext2"></div>
+ 		 <img id= "yelp"src="images/yelpReview2.jpg" style="width:95%">
+  
+		</div>
+
+		<div class="mySlides5">
+ 		 <div class="numbertext2"></div>
+  		<img id= "yelp"src="images/yelpReview3.jpg" style="width:95%">
+ 
+		</div>
+
+		<div class="mySlides5">
+  		<div class="numbertext2"></div>
+  		<img id= "yelp" src="images/yelpReview4.jpg" style="width:95%">
+ 
+		</div>
+
+		<div class="mySlides5">
+  		<div class="numbertext2"></div>
+  		<img id= "yelp"src="images/yelpReview5.jpg" style="width:95%">
+ 
+		</div>
+
+		<a class="prev2" onclick="plusSlides5(-1)">&#10094;</a>
+		<a class="next2" onclick="plusSlides5(1)">&#10095;</a>
+
+		</div>
+
+
+
+   	    </td>
+    	<td>
+
+    		<img src="images/huffingtonPost.png" style="width:95%">
+
+    	</td>
+  		</tr>
+  		<tr>
+   		<td>
+
+   			<a href= "https://www.yelp.com/biz/prantls-bakery-pittsburgh?hrid=NIq-QHrG1ySv_e0izu29xg&rh_type=phrase&rh_ident=burnt_almond_torte" target="_blank"><img id= "yelpLogo" src = "images/yelpLogo.png"></a> 
+
+
+   		</td>
+    	<td>
+
+    		<a href= "http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html" target="_blank"><img id= "huffPostLogo" src = "images/huffPostLogo.png"></a> 
+
+    	</td>
+  		</tr>
+		</table>
+
+		
+
+
+		</div>
+
+
+		
+
+	</div>
+
+	<footer>
+    	<a href= "https://www.facebook.com/PrantlsBakery" target="_blank"><img id= "facebookLogo" src = "images/facebook.png"></a> 
+    	<a href="https://twitter.com/prantlsbakery" target="_blank"><img id= "twitterLogo" src = "images/twitter.png"></a>
+    	<a href= "https://www.instagram.com/prantls_bakery/" target="_blank"><img id= "instagramLogo" src = "images/instagram.png"></a> 
+	</footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+</style>
+</head>
+<body>
+
+
+
+<button class="accordion">Batters and fillings</button>
+<div class="panel">
+  <p>Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can’t hurt to ask!</p>
+</div>
+
+<button class="accordion">Sizes</button>
+<div class="panel">
+  <p>To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required.</p>
+</div>
+
+<button class="accordion">Pricing</button>
+<div class="panel">
+  <p>Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc. For example, the cakes seen above are in the $3.25 – $3.75 per serving range..</p>
+</div>
+
+<button class="accordion">Other Delicacies</button>
+<div class="panel">
+  <p>Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.</p>
+</div>
+
+<button class="accordion">Delivery</button>
+<div class="panel">
+  <p>We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery. </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

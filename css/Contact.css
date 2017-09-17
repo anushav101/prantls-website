@@ -1,0 +1,99 @@
+#facebookLogo{
+	height:35px;
+}
+#twitterLogo{
+	height:35px;
+}
+#instagramLogo{
+	height: 35px;
+}
+
+
+
+nav {
+	margin-top:3%;
+	float: left;
+	
+}
+
+nav a.selected{
+
+  background: darkgrey;
+ 
+}
+
+form{
+
+	width: 50%;
+	padding-left:25%;
+	padding-bottom:4%;
+	font-size:17px;
+	font-family:"Proxima Nova";
+	font-style: italic;
+	
+
+
+}
+
+fieldset{
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 10px;
+
+	
+
+}
+
+footer{
+	text-align:center;
+	
+} 
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(fonts/King-Basil-Lite.otf);
+	}	
+
+.button {
+  
+  font-size: 20px;
+  font-family:"mySecondFont";
+  text-align: center;
+  /*vertical-align:center;*/
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: darkgreen;
+  border: none;
+  border-radius: 15px;
+  padding-top:10px;
+  height: 40px;
+  width:100px;
+ }
+
+#buttonDiv{
+	padding-top:3%;
+	padding-bottom:3%;
+	text-align:center;
+}
+
+
+.button:hover {background-color: rgba(40, 40, 40, 0.8)}
+
+.button:active {
+  background-color: #3e8e41;
+  font-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+
+
+
+
+
+
+
+
+
+
+
+

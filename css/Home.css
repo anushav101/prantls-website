@@ -1,0 +1,24 @@
+#facebookLogo{
+	height:35px;
+}
+#twitterLogo{
+	height:35px;
+}
+#instagramLogo{
+	height: 35px;
+}
+
+nav {
+	float: left;
+	
+} 
+
+nav a.selected{
+
+  background: darkgrey;
+ 
+}
+footer{
+	text-align:center;
+	padding-right:12%;
+} 

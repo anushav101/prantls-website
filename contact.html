@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+
+ 	 <link rel= "stylesheet" media= "all" type="text/css" href = "css/Contact.css" >
+ 	 <link rel= "stylesheet" media="all"  type="text/css" href="css/jquery-ui.css" />
+ 	 <link rel= "stylesheet" media="all"  type="text/css" href="css/jquery.lightbox.css">
+
+  	 <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+ 	 <script type="text/javascript" src="js/Contact.js"></script>
+ 	 <script type="text/javascript" src="js/jquery-ui.js"></script>
+ 	 <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+ 	 <script src="http://code.highcharts.com/highcharts.js"></script>
+ 	 <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+	
+	
+
+	<meta charset = "utf-8">
+	<meta name = "author" content = "Prantl's Bakery">
+	<meta name = "keywords" content = "Pittsburgh, PA">
+	<meta name = "desctiptions" content = "Business Website">
+
+	<title> Prantl's Bakery Contact </title>
+
+</head>
+
+
+
+<style>
+
+	@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Stalemate-Regular.ttf);
+	}	
+	@font-face {
+    font-family: mySecondFont;
+    src: url(fonts/King-Basil-Lite.otf);
+	}	
+	@font-face {
+    font-family: myThirdFont;
+    src: url(fonts/TheWoodlands-Regular.otf);
+	}	
+
+	h1 {
+		color:darkgreen;
+		text-align:center; 
+		font-size: 75px;
+		font-family: "myFirstFont";
+		margin-bottom: 0px;
+		margin-top: 1%;
+		margin-bottom: 0px;
+	}
+	body{
+		background: url("images/background.jpeg") no-repeat center center fixed;
+		background-size: cover;
+	}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: white;
+    opacity: 0.7;
+    font-family: "mySecondFont";
+    font-size: 25px;
+    font-color:darkgreen;
+	}
+
+	
+
+	li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	}
+
+	/* Change the link color on hover */
+	li a:hover {
+    background-color: darkgreen;
+    color: white;
+	}
+	
+
+
+</style>
+
+
+<body>
+
+	<header>
+		 <h1>  Prantl's Bakery </h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href= "index.html">Home</a></li>
+			<li><a href= "locations.html">Locations</a></li>
+			<li><a href= "contact.html" class = "selected">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div id = "content">
+
+	<form name = "myForrm" onsubmit ="return validate()">
+    <fieldset>
+        
+      <label>Name:</label> <br />
+      <input type ="text" name ="Name" maxlength="250" placeholder ="Your Name (Required)" required><br /><br />
+
+
+
+
+      <label for="zipCode">Zip Code:</label><br/>
+      <input type="text" id="zipCode" name="zipCode" value = "" Placeholder = "XXXXX (Not Required)"  ><br/><br/>
+    
+      <label for="phone">Phone number. No dashes or spaces:</label><br/>
+      <input type="text" id="phone" name="phone" value = "" Placeholder = "(Not Required)"  ><br/><br/>
+        
+
+      <label>Your Inquiry</label><br /><textarea name = "message" rows ="10" cols = "50" maxlength="1000" placeholder = "Insert message here..."></textarea>
+    
+        
+  
+     
+      </textarea>
+
+      <br /><br/><label>Would you like to recieve email updates?</label>
+      <br /><input type ="radio" name="emailUpdate" value ="Yes">Yes, please update me
+      <br /><input type ="radio" name="emailUpdate" value ="No">No, thank you.
+
+
+
+
+      <br /><br /><label>Please provide your email address</label>
+      <br /><input type ="email" name="email" placeholder = "abc@defg.com (Required)" required>
+
+      <div id="buttonDiv">
+      	<button class="button">Submit</button>
+  	  </div>
+    </fieldset>
+
+  </form>
+
+	</div>
+
+	<footer>
+    	<a href= "https://www.facebook.com/PrantlsBakery" target="_blank"><img id= "facebookLogo" src = "images/facebook.png"></a> 
+    	<a href="https://twitter.com/prantlsbakery" target="_blank"><img id= "twitterLogo" src = "images/twitter.png"></a>
+    	<a href= "https://www.instagram.com/prantls_bakery/" target="_blank"><img id= "instagramLogo" src = "images/instagram.png"></a> 
+	</footer>
+
+</body>
+
+
+</html>
